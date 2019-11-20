@@ -30,7 +30,7 @@ class Scraper
         student[:twitter] = link
       else
         student[:blog] = link
-      end
+
     end
      student[:twitter] = profile_page.css(".social-icon-container").children.css("a")[0].attribute("href").value
      if profile_page.css(".social-icon-container").children.css("a")[0]
